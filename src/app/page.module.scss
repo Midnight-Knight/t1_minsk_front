@@ -1,0 +1,65 @@
+.Page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-blue);
+  color: var(--text-white);
+  padding: 110px 96px 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.DivColumn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.DivColumnMin {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.List
+{
+  color: var(--text-white);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  > li {
+    width: 100%;
+    color: var(--text-white);
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    margin-left: 24px;
+  }
+}
+
+.Heading {
+  font-size: 48px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2px;
+  > span {
+    font-weight: 300;
+    font-size: 24px;
+  }
+}

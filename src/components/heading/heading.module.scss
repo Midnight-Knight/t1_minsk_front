@@ -1,0 +1,72 @@
+.Heading {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  min-height: 78px;
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  transition: background-color 0.15s linear, color 0.15s linear, box-shadow 0.15s linear;
+  z-index: 210;
+}
+
+.Logo {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  > span {
+    font-weight: 300;
+    font-size: 12px;
+  }
+}
+
+.Nav {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  > a {
+    padding: 0 8px;
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.15s linear;
+  }
+}
+
+.ColorWhiteAndBlueHover {
+  background-color: rgba(0,0,0,0);
+  color: var(--text-white);
+  a:hover {
+    color: var(--text-blue-dark);
+  }
+  h1 {
+    color: var(--text-white);
+    > span {
+      color: var(--text-white);
+    }
+  }
+}
+
+.ColorBase {
+  background-color: var(--background);
+  color: var(--text-base);
+  box-shadow: var(--shadow-header);
+  a:hover {
+    color: var(--text-blue);
+  }
+  h1 {
+    color: var(--text-blue);
+    > span {
+      color: var(--text);
+    }
+  }
+}

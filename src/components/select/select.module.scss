@@ -1,0 +1,63 @@
+.Select {
+  min-width: 160px;
+  outline: none;
+  background-color: transparent;
+  border-width: 0px 0px 1px;
+  border-top-style: initial;
+  border-right-style: initial;
+  border-left-style: initial;
+  border-top-color: initial;
+  border-right-color: initial;
+  border-left-color: initial;
+  border-image: initial;
+  overflow: auto;
+  margin: 0;
+  resize: none;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-bottom-color-dark);
+  color: var(--text-textarea);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  > span {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+  }
+  > div {
+    margin: 0 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    > span {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+      color: var(--text-blue);
+    }
+  }
+}
+
+.Body {
+  width: 100%;
+  position: relative;
+  padding: 24px 0px 7px;
+}
+
+.Label {
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  letter-spacing: -0.01em;
+  font-size: 14px;
+  color: var(--text-gray, #929291);
+  cursor: pointer;
+  transition: 0.2s linear;
+  font-weight: 400;
+  line-height: 28px;
+}

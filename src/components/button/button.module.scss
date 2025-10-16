@@ -1,0 +1,38 @@
+.Button {
+  flex-shrink: 0;
+  flex-grow: 0;
+  height: 46px;
+  border-radius: 100px;
+  min-width: 172px;
+  padding: 0 22px;
+  outline-offset: 0px;
+  outline: transparent solid 4px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  transition: 0.15s ease-out background, 0.15s ease-out color;
+}
+
+.BlueButton {
+  border-color: var(--border-blue, #00adeb);
+  color: var(--text-blue, #00adeb);
+  background: transparent;
+  &:hover {
+    color: var(--text-white, #ffffff);
+    background: var(--background-blue, #00adeb);
+  }
+}
+
+.RedButton {
+  border-color: var(--border-error, #FA4A14);
+  color: var(--text-error, #FA4A14);
+  background: transparent;
+  &:hover {
+    color: var(--text-white, #ffffff);
+    background: var(--background-card-error, #FA4A14);
+  }
+}
